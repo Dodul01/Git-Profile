@@ -16,30 +16,40 @@
 
     <!-- Material Icon -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <script type="module" src="./assets/js/Profile.js"></script>
 </head>
 
 <body>
-    <nav class="flex justify-between flex-wrap p-10">
+    <nav class="flex justify-between flex-wrap p-10 mx-10">
         <h1 class="flex">Git <span class="blue-text">Profile</span></h1>
         <div class="flex">
-            <input id="userName" class="border p-10 rounded-left surface-dark-bg" type="text" placeholder="Search here">
+            <input id="userName" class="border p-10 rounded-left surface-dark-bg" type="text" placeholder="@user name">
             <button id="searchBtn" class="blue-bg white-text rounded-right p-10">Search</button>
         </div>
     </nav>
 
-    <main class="flex p-10">
-        <div>
-            <img id="avater" class="avater rounded-full border-blue" src="" alt="">
-        </div>
+    <main class="p-10">
+        <section class="flex">
+            <div>
+                <img id="avater" class="avater rounded-full border-blue" src="" alt="">
+            </div>
 
-        <div>
-            <h1 id="displayUserName"></h1>
-            <p id="bio"></p>
-            <p id="location"></p>
-            <p id="twitter_username"></p>
-        </div>
+            <div class="mx-10">
+                <h1 class="my-10" id="displayUserName"></h1>
+                <p class="my-5" id="bio"></p>
+                <div class="flex items-center my-5">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <p id="location"></p>
+                </div>
+                <p class="my-5" id="twitter_username"></p>
+            </div>
+        </section>
+
+        <section id="repos-list"></section>
     </main>
 </body>
 
