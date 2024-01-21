@@ -21,36 +21,40 @@
     <script type="module" src="./assets/js/Profile.js"></script>
 </head>
 
-<body>
-    <nav class="flex justify-between flex-wrap p-10 mx-10">
-        <h1 class="flex">Git <span class="blue-text">Profile</span></h1>
-        <div class="flex">
-            <input id="userName" class="border p-10 rounded-left surface-dark-bg" type="text" placeholder="@user name">
-            <button id="searchBtn" class="blue-bg white-text rounded-right p-10">Search</button>
+<body class="app_container">
+    <nav class="nav_bar">
+        <h1 class="brand_title">Git <span>Profile</span></h1>
+        <div class="search_bar">
+            <input id="userName" type="text" placeholder="@user name">
+            <button id="searchBtn">Search</button>
         </div>
     </nav>
 
-    <main class="p-10">
-        <section class="flex">
+    <main>
+        <section class="profile_container">
             <div>
-                <img id="avater" class="avater rounded-full border-blue" src="" alt="">
+                <img id="avater" class="avater" src="" alt="user_image">
             </div>
 
-            <div class="mx-10">
-                <h1 class="my-10" id="displayUserName"></h1>
-                <p class="my-5" id="bio"></p>
-                <div class="flex items-center my-5">
+            <div>
+                <h1 id="displayUserName"></h1>
+                <p id="bio"></p>
+                <div class="user_location">
                     <span class="material-symbols-outlined">
                         location_on
                     </span>
                     <p id="location"></p>
                 </div>
-                <p class="my-5" id="twitter_username"></p>
+                <p id="twitter_username"></p>
             </div>
         </section>
 
         <section id="repos-list"></section>
+        
+        <section id="pagination"></section>
     </main>
+
+
 </body>
 
 </html>
