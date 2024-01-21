@@ -31,12 +31,6 @@ To run this project locally, follow these steps:
 
     Open the `index.html` file in your preferred web browser.
 
-    ```bash
-    google-chrome index.html
-    ```
-
-    Replace `google-chrome` with the command for opening a web browser on your specific operating system.
-
 4. **Enter GitHub Username:**
 
     Enter your GitHub username in the provided input field and click the search button.
